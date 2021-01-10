@@ -1,0 +1,27 @@
+SLICK SLIDER
+
+1. Custom nút next và previous
+- Tạo html 2 nút bọc nó trong 1 class vidu: divcha.
+js : thêm 2 thuộc tính: prevArrow và nextArrow.
+
+2. Custom dot.
+- Tạo html bọc dot.
+js : thêm thuộc tính: appendDots.
+css: 
+- li.slick-active: css lại + Viết một @keyframes.
+
+3. fade: mờ dần khi chuyển slider.
+
+$(document).ready(function () {
+
+  $('.slider').slick({
+    prevArrow: '.prev-btn',
+    nextArrow: '.next-btn',
+    dots: true,
+    appendDots: '.slider-dots',
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: '6000'
+  });
+
+});
