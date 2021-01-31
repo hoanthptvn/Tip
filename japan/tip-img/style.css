@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.item_ul {
+}
+
+.item-li {
+  float: left;
+  width: 130px;
+}
+
+.c-list-thumb a {
+  border: 1px solid #ccc;
+  display: table;
+  overflow: hidden;
+  text-align: center;
+  height: 88px;
+  width: 128px;
+}
+
+.c-list-thumb figure {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c-list-thumb img {
+  width: auto;
+  height: auto;
+  max-width: 128px;
+  max-height: 88px;
+  vertical-align: middle;
+}
