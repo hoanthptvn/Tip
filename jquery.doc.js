@@ -4,6 +4,12 @@ $("selector").fadeIn("thời gian", "hiệu ứng", "callback()"); // hiện
 
 /* di chuyển element */
 $("selector").animate({ "key : value"}, "tời gian", "callback()");
+/*
+Phải có css relative, fixed, absolute
+ */
+
+/* Stop() */
+$("selector").stop() // dừng sự kiện dừng chuyển động.
 
 /* delay() hàm độ trễ của chuyển động */
 $(".green").delay(1000).fadeTo(1000, 0.5);
@@ -23,7 +29,7 @@ $("#list").find("li") // kiếm tất cả thẻ li có trong #list
 $("#list").parent("li") // kiếm cha li gần nhất.
 $("#list").parents("li") // kiếm tất cả cha li bên ngoài.
 $("#list").children("li") // kiếm tất cả thẻ li con nằm trong list.
-$("#list").siblings("element") // tìm kiếm cho element.
+$("#list").siblings("element") // tìm kiếm cho element anh, em cùng cấp của nó.
 $("#list").prev() // element trước.
 $("#list").next() // element sau.
 

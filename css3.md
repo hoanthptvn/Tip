@@ -55,3 +55,5 @@ CƠ BẢN VỀ CSS VÀ CSS3
 * rotateX: độ deg --> Xoay theo trục ngang.
 * rotateY: độ deg --> Xoay theo trục dọc.
 * transform-origin: 50% 50% --> mặc định cách trái 50%, cách trên 50%.
+
+8.
