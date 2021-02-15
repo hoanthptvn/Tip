@@ -56,4 +56,6 @@ CƠ BẢN VỀ CSS VÀ CSS3
 * rotateY: độ deg --> Xoay theo trục dọc.
 * transform-origin: 50% 50% --> mặc định cách trái 50%, cách trên 50%.
 
-8.
+8. Absolute và Relative
+
+- Absolute không có thằng cha thì sẽ căn theo Body.
