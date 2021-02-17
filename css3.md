@@ -31,7 +31,7 @@ CƠ BẢN VỀ CSS VÀ CSS3
 
 5. GRADIENT
 
-- Linear Gradient ( Tuyến tính ):
+- LINEAR-GRADIENT: đường thẳng dùng để tạo ra hiệu ứng Gradient.
 
 * Hiển thị màu từ trái quá phải. Từ trên xuống dưới hoặc bất kì góc nào.
 
@@ -40,7 +40,7 @@ CƠ BẢN VỀ CSS VÀ CSS3
 - word-wrap:
 - word-bread:
 
-7. ANIMATION:
+7. TRANSFORMS:
    HOVER: di chuột vào bố tác dụng thằng con.
 
 - PARENT:
@@ -59,3 +59,23 @@ CƠ BẢN VỀ CSS VÀ CSS3
 8. Absolute và Relative
 
 - Absolute không có thằng cha thì sẽ căn theo Body.
+
+9. initial, inherit và unset
+
+- Inherit: kế thừa thuộc tính của các phần tử cha gần nó nhất (parent element).
+
+- Initial: sử dụng style mặc định của trình duyệt.
+
+- Unset: khi đặt giá trị của thuộc tính là unset, trình duyệt sẽ sử dụng một trong hai thuộc tính inherit hoặc initial tùy thuộc vào thuộc tính của phần tử cha. Nếu phần tử cha có các thuộc tính đó, nó sẽ kế thừa (inherit) giá trị thuộc tính từ phần tử cha, nếu không có thì unset sẽ sử dụng giá trị mặc định của trình duyệt (initial).
+
+10. BACKGROUND
+
+- Background-image: url("hinh.png"),url("hinh.png");
+
+11. TRANSITIONS
+
+- Transitions: TenThuocTinh 2s.
+
+12. ANIMATIONS
+
+- Cho phép bạn tạo chuyển động nhiều slide.
