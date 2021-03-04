@@ -59,3 +59,33 @@ $(function () {
 
   scrollSection();
 });
+
+/* Slick slider */
+
+$(function () {
+  $('.slider').slick({
+    dots: true,
+    appendDots: '.slider-dots',
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: '1500',
+    prevArrow: null,
+    nextArrow: null,
+  });
+});
+
+/* Menu Sp */
+
+$(".even-click li").click(function () {
+  if ($('.menu').hasClass("show")) {
+    $('.menu_hidden').slideUp('400', function () {
+      $('.menu').removeClass('show');
+    });
+    $(this).removeClass("open");
+  } else {
+    $('.menu').addClass('show');
+    $('.menu_hidden').slideDown('400');
+    $(this).addClass('open');
+  }
+  return false;
+});
