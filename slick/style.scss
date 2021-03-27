@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#small_banner .slick-slide {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+#small_banner img {
+  cursor: pointer;
+}
+
+#small_banner .slick-center {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.port_details_all_img {
+  overflow: hidden;
+}
+
+.page-link:hover {
+  color: #01a9ac;
+}

@@ -25,20 +25,6 @@ $(function () {
     })
   }
 
-  // Back to top
-  let backTop = function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > services.offset().top) {
-        btnBack.css({ "right": "50px" });
-      } else {
-        btnBack.css({ "right": "-50px" });
-      }
-    })
-    btnBack.on("click", function () {
-      $("html, body").animate({ scrollTop: 0 }, 1000)
-    })
-  }
-  backTop();
 
   // Scroll section
 
@@ -89,3 +75,49 @@ $(".even-click li").click(function () {
   }
   return false;
 });
+
+/**
+ * Viết hiệu ứng filter bằng code jquery thuần
+ */
+$("nav ul li").on("click", function () {
+  let category = $(this).data("class");
+  $(".content ul li").each(function (index, el) {
+    if ($(this).hasClass(category)) {
+      $(this).fadeIn();
+    } else {
+      $(this).fadeOut();
+    }
+  })
+})
+
+/**
+ * Viết hiệu ứng filter bằng isotope
+ * https://isotope.metafizzy.co/
+ */
+
+$("nav ul li").on("click", function () {
+  let category = $(this).data("danhmuc");
+  if (category === "all") {
+    $(".content ul").isotope({ filter: "*" });
+  } else {
+    $(".content ul").isotope({ filter: category })
+  }
+})
+
+/* Sắp xếp images gird */
+$(".content ul").isotope({
+  itemSelector: "li"
+})
+
+
+/**
+ * Sử dụng popup Magnific Popup images
+ * https://dimsemenov.com/plugins/magnific-popup/documentation.html#including-files
+ */
+$("#List-image").magnificPopup({
+  delegate: "a",
+  type: "image",
+  gallery: {
+    enabled: true
+  }
+})
