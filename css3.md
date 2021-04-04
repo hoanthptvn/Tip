@@ -79,3 +79,8 @@ CƠ BẢN VỀ CSS VÀ CSS3
 12. ANIMATIONS
 
 - Cho phép bạn tạo chuyển động nhiều slide.
+
+13. FLEX BOX
+
+- flex-grow : 1
+  Chiều dài của phần tử tự động rông ra khi nội dung bên trong ngắn.
